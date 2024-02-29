@@ -1,0 +1,191 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+body{
+    background-color: rgb(59, 59, 59);
+}
+
+.header{
+    position: fixed;
+    z-index: 5;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    background-color: rgb(59, 59, 59);
+}
+
+.header ul{width: 100%;height: 80px;}
+.header li{float: left;}
+.header li:nth-child(1){width: 100px;height: 80px;border-right: 1px solid rgb(195, 195, 195);text-align: center;box-sizing: border-box;padding-top: 12px;}
+.header li:nth-child(1) img{width: 35%;}
+
+.header li:nth-child(2){
+    width: calc(100% - 300px);
+    height: 80px;
+    font:bold 28px/80px sans-serif;
+    border-right:1px solid rgb(195, 195, 195);
+    color:white;
+    box-sizing: border-box;
+    padding-left: 12px;
+}
+.header li:nth-child(3){width: 80px;height: 80px;text-align: center;box-sizing: border-box;padding-top: 12px;border-right: 1px solid rgb(195, 195, 195);}
+.header li:nth-child(3) img{
+    width: 50%;
+}
+.header li:nth-child(4){
+    width: 120px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font:bold 28px/80px sans-serif;
+    color:rgb(195, 195, 195);
+}
+
+.nav{
+    width: 99px;
+    height: calc(100% - 80px);
+    border-right: 1px solid rgb(195, 195, 195);
+    position: fixed;
+    z-index: 5;
+    left:0;
+    top:80px;
+}
+
+.nav .side{ width: 100%; height: 80px;text-align: center;border-bottom:1px solid rgb(195, 195, 195); padding-top: 12px;box-sizing: border-box;position: relative;}
+.nav div::before{position: absolute;content:'';width: 4px;height: 100%;background-color: skyblue;right:0;top:0;}
+.nav div:nth-child(1)::before{width: 0;}
+.nav img{ width: 50%;}
+
+
+.wrap{
+    width:calc(100% - 100px);
+    height: auto;
+
+    margin-left:100px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.wrap .search{
+    width: 96%;
+    min-width: 800px;
+    margin: auto;
+    height: 56px;
+    position: relative;
+    margin-top: 24px;
+}
+.search button{
+    width: 100px;
+    height:48px;
+    border-radius: 8px;
+    text-align: center;
+    border:0;
+    background-color:rgb(28, 28, 28);
+    position: absolute;
+    top:2px;
+
+}
+.search .inner1 button:nth-child(1){left:0px;}
+.search .inner1 button:nth-child(2){left:90px;}
+.search button img{
+    width: 30%;
+}
+.search .inner2 button:nth-child(1){right:100px;}
+.search .inner2 button:nth-child(2){right:0;}
+ 
+.search .searchline{
+    width: calc(100% - 220px );
+    height: 44px;
+    border:1px solid rgb(195, 195, 195);
+    border-radius: 8px;
+    margin-left:200px;
+    margin-top: 4px;
+}
+.searchline input{
+    width: 100%;
+    height: 44px;
+    border:0;
+    background-color: transparent;
+    outline: 0;
+    box-sizing: border-box;
+    padding:16px;
+    font:bold 20px/44px sans-serif;
+}
+.search .inner1{
+    width: calc(100% - 200px);
+    height: 56px;
+    float: left; 
+    position: relative;
+}
+.search .inner2{
+    width: 200px;
+    height: 56px;
+    float: left;
+    position: relative;
+}
+
+.wrap .title{
+    width: 96%;
+    min-width: 800px;
+    margin: auto;
+    height: 38px;
+    margin-top:8px;
+}
+
+.title p{float:left;}
+.title p:nth-child(1){border:1px solid rgb(195, 195, 195);border-radius: 4px;padding: 4px; padding-left: 8px;padding-right: 40px;color:white;}
+.title p:nth-child(2){border:1px solid rgb(195, 195, 195);border-radius: 4px;padding: 4px; padding-left: 16px;padding-right: 16px;color:white;margin-left:8px;}
+
+.wrap .card{
+    width: 96%;
+    min-width:800px;
+    margin: auto;
+    height: auto;
+    margin-top: 8px;
+}
+
+.card .article{
+    width: 25%;
+    height: auto;
+    float: left;
+}
+.article ul{width: 100%;height: auto;}
+.article li{
+    width: 98%;
+    height: 200px;
+    background-color: rgb(85, 85, 85);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgb(78, 78, 78);
+    margin-bottom: 12px;
+    padding-left: 12px;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+.article h5{
+    color:rgb(195, 195, 195);
+    font:bold 18px/40px sans-serif;
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.article .icon{
+    width: 150px;
+    height: 20px;
+    background-color: lightcoral;
+    border-radius: 10px;
+    padding: 4px;
+}
+.article h4{
+    width: 80%;
+    margin: 12px;
+    margin-left: 0;
+}
+
+.article .title{
+    color:aliceblue;
+}
+.article .user{
+    color:aliceblue;
+}
