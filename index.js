@@ -1,10 +1,19 @@
  $('#fullpage').fullpage({   
-        autoScrolling:true,
-        scrollHorizontally: true,
+        autoScrolling:true,        
         navigation: true,
         navigationPosition: 'right',
         menu:'.menu' ,
         anchors:['1','2','3','4'],
+        afterLoad: function(origin, destination, direction, trigger){
+            console.log(destination.index)
+            if(destination.index == 3){
+                $.fn.fullpage.setAutoScrolling(false)                
+            }else{
+                $.fn.fullpage.setAutoScrolling(true)
+            }
+        },
+
+ 
 });
 
 $('.d1').colorbox({rel:'gal'});
