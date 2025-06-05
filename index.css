@@ -11,7 +11,11 @@ a:link , a:visited{
     text-decoration: none;
     color:#333;
 }
-#fullpage .section:nth-child(1){background: red;}
-#fullpage .section:nth-child(2){background: green;}
+#fullpage .section:nth-child(1){
+    background: url(./img/main.jpg) center/cover;
+}
+#fullpage .section:nth-child(2){
+    background: url(./img/profile.jpg) center/cover;
+}
 #fullpage .section:nth-child(3){background: blue;}
 #fullpage .section:nth-child(4){background: orange;}
