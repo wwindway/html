@@ -136,6 +136,33 @@
             word-break: keep-all;
         }
 
+        #work ul {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(12px, 2vw, 24px);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #work li {
+            display: flex;
+            min-width: 0;
+            min-height: 200px;
+            align-items: center;
+            padding: clamp(18px, 3vw, 36px);
+            border: 1px solid rgb(244 243 237 / 20%);
+            background: rgb(244 243 237 / 4%);
+        }
+
+        #work li h2 {
+            margin: 0;
+            font-size: clamp(22px, 3vw, 40px);
+            line-height: 1.2;
+            word-break: keep-all;
+        }
+
         .work-list {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -233,6 +260,19 @@
                 width: 100vw;
             }
 
+            #work ul {
+                gap: 10px;
+            }
+
+            #work li {
+                min-height: 145px;
+                padding: 14px;
+            }
+
+            #work li h2 {
+                font-size: clamp(18px, 5vw, 25px);
+            }
+
             .work-list {
                 grid-template-columns: 1fr;
                 gap: 10px;
@@ -290,11 +330,20 @@
         </section>
 
         <section class="section work" id="work" aria-labelledby="work-title">
-            <div class="content">
-                <p class="eyebrow"></p>
-                <h2 id="work-title"></h2>              
-            </div>
-            <span class="scroll-cue">Thank you · 2026</span>
+            <ul>
+                <li>
+                    <h2>상세페이지</h2>
+                </li>
+                <li>
+                    <h2>디자인 리뉴얼</h2>
+                </li>
+                <li>
+                    <h2>프리미어 편집작업</h2>
+                </li>
+                <li>
+                    <h2>애프터 이펙트 모션작업</h2>
+                </li>
+            </ul>            
         </section>
     </main>
 
